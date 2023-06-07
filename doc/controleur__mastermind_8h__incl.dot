@@ -1,0 +1,16 @@
+digraph "source/controleur_mastermind.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node0 [label="source/controleur_mastermind.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="gtk/gtk.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="modele_mastermind.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$modele__mastermind_8h.html",tooltip="Modèle (pattern MVC) pour la gestion du jeu Mastermind. "];
+  Node2 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="vue_mastermind.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$vue__mastermind_8h.html",tooltip="Vue (pattern MVC) pour la gestion du jeu Mastermind. "];
+  Node3 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node0 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

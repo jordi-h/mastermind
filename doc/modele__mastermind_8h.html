@@ -1,0 +1,633 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mastermind: Référence du fichier source/modele_mastermind.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Mastermind
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Définitions de type</a> &#124;
+<a href="#enum-members">Énumérations</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier modele_mastermind.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Modèle (pattern MVC) pour la gestion du jeu Mastermind.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;gtk/gtk.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de modele_mastermind.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="modele__mastermind_8h__incl.png" border="0" usemap="#source_2modele__mastermind_8h" alt=""/></div>
+<map name="source_2modele__mastermind_8h" id="source_2modele__mastermind_8h">
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier :</div>
+<div class="dyncontent">
+<div class="center"><img src="modele__mastermind_8h__dep__incl.png" border="0" usemap="#source_2modele__mastermind_8hdep" alt=""/></div>
+<map name="source_2modele__mastermind_8hdep" id="source_2modele__mastermind_8hdep">
+</map>
+</div>
+</div>
+<p><a href="modele__mastermind_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcombinaison__t.html">combinaison_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Représentation d'une combinaison de couleurs et de son score.  <a href="structcombinaison__t.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structordi__t.html">ordi_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure contenant les outils suplémentaires nécessaires pour l'algorithme de l'ordinateur.  <a href="structordi__t.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhistorique__t.html">historique_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure contenant l'historique de toutes les combinaisons.  <a href="structhistorique__t.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrecords__t.html">records_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure contenant les outils suplémentaires nécessaires pour les records.  <a href="structrecords__t.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmodele__t.html">modele_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implémentation du modèle pour le jeu Mastermind.  <a href="structmodele__t.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a6d6f9c3f8c3c6261cad308dccc0380c9"><td class="memItemLeft" align="right" valign="top"><a id="a6d6f9c3f8c3c6261cad308dccc0380c9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modele__mastermind_8h.html#a6d6f9c3f8c3c6261cad308dccc0380c9">NB_PIONS</a>&#160;&#160;&#160;4</td></tr>
+<tr class="memdesc:a6d6f9c3f8c3c6261cad308dccc0380c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nombre de pions. <br /></td></tr>
+<tr class="separator:a6d6f9c3f8c3c6261cad308dccc0380c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b6b6aecaa7b2bd883d1d047bafad79b"><td class="memItemLeft" align="right" valign="top"><a id="a8b6b6aecaa7b2bd883d1d047bafad79b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modele__mastermind_8h.html#a8b6b6aecaa7b2bd883d1d047bafad79b">NB_MANCHES</a>&#160;&#160;&#160;10</td></tr>
+<tr class="memdesc:a8b6b6aecaa7b2bd883d1d047bafad79b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nombre de manches. <br /></td></tr>
+<tr class="separator:a8b6b6aecaa7b2bd883d1d047bafad79b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89ad436eb02e0483d24e46d0889e64e2"><td class="memItemLeft" align="right" valign="top"><a id="a89ad436eb02e0483d24e46d0889e64e2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modele__mastermind_8h.html#a89ad436eb02e0483d24e46d0889e64e2">NB_COULEURS</a>&#160;&#160;&#160;7</td></tr>
+<tr class="memdesc:a89ad436eb02e0483d24e46d0889e64e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nombre de couleurs. <br /></td></tr>
+<tr class="separator:a89ad436eb02e0483d24e46d0889e64e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Définitions de type</h2></td></tr>
+<tr class="memitem:adce75c1776f467fb69780ae4a2b227b6"><td class="memItemLeft" align="right" valign="top"><a id="adce75c1776f467fb69780ae4a2b227b6"></a>
+typedef struct <a class="el" href="structcombinaison__t.html">combinaison_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Combinaison</b></td></tr>
+<tr class="separator:adce75c1776f467fb69780ae4a2b227b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a095f4ef486cdf84adbd882344f6bfff7"><td class="memItemLeft" align="right" valign="top"><a id="a095f4ef486cdf84adbd882344f6bfff7"></a>
+typedef struct <a class="el" href="structordi__t.html">ordi_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Ordi</b></td></tr>
+<tr class="separator:a095f4ef486cdf84adbd882344f6bfff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8aee1125c9e6c656ec7b48cac222aaa"><td class="memItemLeft" align="right" valign="top"><a id="af8aee1125c9e6c656ec7b48cac222aaa"></a>
+typedef struct <a class="el" href="structhistorique__t.html">historique_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Historique</b></td></tr>
+<tr class="separator:af8aee1125c9e6c656ec7b48cac222aaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92e8ff78d22fc07758f9e5de0eced194"><td class="memItemLeft" align="right" valign="top"><a id="a92e8ff78d22fc07758f9e5de0eced194"></a>
+typedef struct <a class="el" href="structrecords__t.html">records_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Records</b></td></tr>
+<tr class="separator:a92e8ff78d22fc07758f9e5de0eced194"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d5581934bcfc00821c880f919e26855"><td class="memItemLeft" align="right" valign="top"><a id="a6d5581934bcfc00821c880f919e26855"></a>
+typedef struct <a class="el" href="structmodele__t.html">modele_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ModeleMastermind</b></td></tr>
+<tr class="separator:a6d5581934bcfc00821c880f919e26855"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Énumérations</h2></td></tr>
+<tr class="memitem:ade4806bb9ec95b0cea92c861fac6455b"><td class="memItemLeft" align="right" valign="top"><a id="ade4806bb9ec95b0cea92c861fac6455b"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modele__mastermind_8h.html#ade4806bb9ec95b0cea92c861fac6455b">CouleurProposition</a> { <br />
+&#160;&#160;<b>videP</b> = 0, 
+<b>vert</b> = 1, 
+<b>jaune</b> = 2, 
+<b>rouge</b> = 3, 
+<br />
+&#160;&#160;<b>bleu</b> = 4, 
+<b>cyan</b> = 5, 
+<b>mauve</b> = 6, 
+<b>orange</b> = 7
+<br />
+ }<tr class="memdesc:ade4806bb9ec95b0cea92c861fac6455b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumération fournissant les couleurs pour les propositions. <br /></td></tr>
+</td></tr>
+<tr class="separator:ade4806bb9ec95b0cea92c861fac6455b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1e29ea6811ca084e3d99b390a3dcef6"><td class="memItemLeft" align="right" valign="top"><a id="af1e29ea6811ca084e3d99b390a3dcef6"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modele__mastermind_8h.html#af1e29ea6811ca084e3d99b390a3dcef6">CouleurScore</a> { <b>videS</b> = 0, 
+<b>blanc</b> = 1, 
+<b>noir</b> = 2
+ }<tr class="memdesc:af1e29ea6811ca084e3d99b390a3dcef6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumération fournissant les couleurs pour les scores. <br /></td></tr>
+</td></tr>
+<tr class="separator:af1e29ea6811ca084e3d99b390a3dcef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:ab3e2bd464125d389790f71c79e4cfec5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structordi__t.html">Ordi</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modele__mastermind_8h.html#ab3e2bd464125d389790f71c79e4cfec5">creer_ordi</a> (void)</td></tr>
+<tr class="memdesc:ab3e2bd464125d389790f71c79e4cfec5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée une structure de type Ordi.  <a href="#ab3e2bd464125d389790f71c79e4cfec5">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ab3e2bd464125d389790f71c79e4cfec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4194e0115197dc1e528af0d2083d0d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcombinaison__t.html">Combinaison</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modele__mastermind_8h.html#ab4194e0115197dc1e528af0d2083d0d6">creer_combinaison</a> (void)</td></tr>
+<tr class="memdesc:ab4194e0115197dc1e528af0d2083d0d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée une structure de type Combinaison.  <a href="#ab4194e0115197dc1e528af0d2083d0d6">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ab4194e0115197dc1e528af0d2083d0d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dcd5665063daa7ba06d0131bee00bb1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structhistorique__t.html">Historique</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modele__mastermind_8h.html#a8dcd5665063daa7ba06d0131bee00bb1">creer_historique</a> (<a class="el" href="structcombinaison__t.html">Combinaison</a> *combinaison[])</td></tr>
+<tr class="memdesc:a8dcd5665063daa7ba06d0131bee00bb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée une structure de type Historique.  <a href="#a8dcd5665063daa7ba06d0131bee00bb1">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a8dcd5665063daa7ba06d0131bee00bb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed38305381294d65a9d7059b54242454"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmodele__t.html">ModeleMastermind</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modele__mastermind_8h.html#aed38305381294d65a9d7059b54242454">creer_modele_mastermind</a> (<a class="el" href="structhistorique__t.html">Historique</a> *historique, <a class="el" href="structrecords__t.html">Records</a> *rec, <a class="el" href="structordi__t.html">Ordi</a> *ordi)</td></tr>
+<tr class="memdesc:aed38305381294d65a9d7059b54242454"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée une structure de type ModeleMastermind.  <a href="#aed38305381294d65a9d7059b54242454">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aed38305381294d65a9d7059b54242454"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7089ea7b0c979c2cf97e645ae73dfe6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structrecords__t.html">Records</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modele__mastermind_8h.html#a7089ea7b0c979c2cf97e645ae73dfe6b">creer_records</a> (void)</td></tr>
+<tr class="memdesc:a7089ea7b0c979c2cf97e645ae73dfe6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée une structure de type Records.  <a href="#a7089ea7b0c979c2cf97e645ae73dfe6b">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a7089ea7b0c979c2cf97e645ae73dfe6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8d0e8171c25e4b6fea97d4c7d806732"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modele__mastermind_8h.html#aa8d0e8171c25e4b6fea97d4c7d806732">remplissage_reponse_aleatoire</a> (<a class="el" href="structmodele__t.html">ModeleMastermind</a> *mm)</td></tr>
+<tr class="memdesc:aa8d0e8171c25e4b6fea97d4c7d806732"><td class="mdescLeft">&#160;</td><td class="mdescRight">Génère aléatoirement une combinaison de NB_PIONS couleurs.  <a href="#aa8d0e8171c25e4b6fea97d4c7d806732">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aa8d0e8171c25e4b6fea97d4c7d806732"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c1a53d5e97f848de7a972299c423e5e"><td class="memItemLeft" align="right" valign="top">GtkWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modele__mastermind_8h.html#a2c1a53d5e97f848de7a972299c423e5e">charger_image</a> (char *nom_image, unsigned int longeur, unsigned int largeur)</td></tr>
+<tr class="memdesc:a2c1a53d5e97f848de7a972299c423e5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Charge une image de dimension donnée.  <a href="#a2c1a53d5e97f848de7a972299c423e5e">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a2c1a53d5e97f848de7a972299c423e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad666783294d96851d95dc19183e8ccb9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modele__mastermind_8h.html#ad666783294d96851d95dc19183e8ccb9">manche_maj</a> (GtkWidget *pLabel, unsigned short manche)</td></tr>
+<tr class="memdesc:ad666783294d96851d95dc19183e8ccb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mise à jour de la manche.  <a href="#ad666783294d96851d95dc19183e8ccb9">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ad666783294d96851d95dc19183e8ccb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a520d1ed872ce6e277e5e95b2afa82183"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modele__mastermind_8h.html#a520d1ed872ce6e277e5e95b2afa82183">calcul_record</a> (unsigned short manche, <a class="el" href="structmodele__t.html">ModeleMastermind</a> *mm)</td></tr>
+<tr class="memdesc:a520d1ed872ce6e277e5e95b2afa82183"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcule le score de la manche courante.  <a href="#a520d1ed872ce6e277e5e95b2afa82183">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a520d1ed872ce6e277e5e95b2afa82183"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa2c79c8cab70aadaa6bc6fa1b9684ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modele__mastermind_8h.html#aaa2c79c8cab70aadaa6bc6fa1b9684ba">tri_records</a> (<a class="el" href="structrecords__t.html">Records</a> *rec)</td></tr>
+<tr class="memdesc:aaa2c79c8cab70aadaa6bc6fa1b9684ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trie les records par ordre décroissant.  <a href="#aaa2c79c8cab70aadaa6bc6fa1b9684ba">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aaa2c79c8cab70aadaa6bc6fa1b9684ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a264a6d21aa96acd78a35b0f7c20a81ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modele__mastermind_8h.html#a264a6d21aa96acd78a35b0f7c20a81ae">decale</a> (<a class="el" href="structcombinaison__t.html">Combinaison</a> *manche)</td></tr>
+<tr class="memdesc:a264a6d21aa96acd78a35b0f7c20a81ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Décale les scores.  <a href="#a264a6d21aa96acd78a35b0f7c20a81ae">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a264a6d21aa96acd78a35b0f7c20a81ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0deade48bdf863eec01a557a1f4257f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modele__mastermind_8h.html#a0deade48bdf863eec01a557a1f4257f9">compare_reponse_proposition</a> (<a class="el" href="structmodele__t.html">ModeleMastermind</a> *mm, <a class="el" href="structcombinaison__t.html">Combinaison</a> *manche)</td></tr>
+<tr class="memdesc:a0deade48bdf863eec01a557a1f4257f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare la proposition avec la réponse et remplit la combinaison du score.  <a href="#a0deade48bdf863eec01a557a1f4257f9">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a0deade48bdf863eec01a557a1f4257f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8430f8eae3c20d01e3547a35fe36df2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modele__mastermind_8h.html#ac8430f8eae3c20d01e3547a35fe36df2">algorithme_ordinateur</a> (<a class="el" href="structmodele__t.html">ModeleMastermind</a> *mm, <a class="el" href="structcombinaison__t.html">Combinaison</a> *manche)</td></tr>
+<tr class="memdesc:ac8430f8eae3c20d01e3547a35fe36df2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Génère la combinaison de NB_PIONS couleurs de l'ordinateur.  <a href="#ac8430f8eae3c20d01e3547a35fe36df2">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ac8430f8eae3c20d01e3547a35fe36df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Modèle (pattern MVC) pour la gestion du jeu Mastermind. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Naa Marco s175610 &ndash; Hoorelbeke Jordi s175615 </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>06/05/2019</dd></dl>
+<p>Gestion du jeu Mastermind via une approche MVC. Ce module gère l'aspect modèle. </p>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="ac8430f8eae3c20d01e3547a35fe36df2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8430f8eae3c20d01e3547a35fe36df2">&#9670;&nbsp;</a></span>algorithme_ordinateur()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void algorithme_ordinateur </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmodele__t.html">ModeleMastermind</a> *&#160;</td>
+          <td class="paramname"><em>mm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcombinaison__t.html">Combinaison</a> *&#160;</td>
+          <td class="paramname"><em>manche</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Génère la combinaison de NB_PIONS couleurs de l'ordinateur. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mm</td><td>une structure de type ModeleMastermind. </td></tr>
+    <tr><td class="paramname">manche</td><td>une structure de type Combinaison. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a520d1ed872ce6e277e5e95b2afa82183"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a520d1ed872ce6e277e5e95b2afa82183">&#9670;&nbsp;</a></span>calcul_record()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void calcul_record </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>manche</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmodele__t.html">ModeleMastermind</a> *&#160;</td>
+          <td class="paramname"><em>mm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calcule le score de la manche courante. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">manche</td><td>la manche courante. </td></tr>
+    <tr><td class="paramname">mm</td><td>une structure de type ModeleMastermind. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2c1a53d5e97f848de7a972299c423e5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c1a53d5e97f848de7a972299c423e5e">&#9670;&nbsp;</a></span>charger_image()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GtkWidget * charger_image </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nom_image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>longeur</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>largeur</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Charge une image de dimension donnée. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nom_image</td><td>le chemin vers l'image à charger. </td></tr>
+    <tr><td class="paramname">longueur</td><td>la longueur de l'image à charger. </td></tr>
+    <tr><td class="paramname">largeur</td><td>la largeur de l'image à charger.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>image </dd></dl>
+
+</div>
+</div>
+<a id="a0deade48bdf863eec01a557a1f4257f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0deade48bdf863eec01a557a1f4257f9">&#9670;&nbsp;</a></span>compare_reponse_proposition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">compare_reponse_proposition </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmodele__t.html">ModeleMastermind</a> *&#160;</td>
+          <td class="paramname"><em>mm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcombinaison__t.html">Combinaison</a> *&#160;</td>
+          <td class="paramname"><em>manche</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compare la proposition avec la réponse et remplit la combinaison du score. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mm</td><td>une structure de type ModeleMastermind. </td></tr>
+    <tr><td class="paramname">manche</td><td>une structure de type Combinaison. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab4194e0115197dc1e528af0d2083d0d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4194e0115197dc1e528af0d2083d0d6">&#9670;&nbsp;</a></span>creer_combinaison()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structcombinaison__t.html">Combinaison</a> * creer_combinaison </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crée une structure de type Combinaison. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>combinaison </dd></dl>
+
+</div>
+</div>
+<a id="a8dcd5665063daa7ba06d0131bee00bb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dcd5665063daa7ba06d0131bee00bb1">&#9670;&nbsp;</a></span>creer_historique()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structhistorique__t.html">Historique</a> * creer_historique </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcombinaison__t.html">Combinaison</a> *&#160;</td>
+          <td class="paramname"><em>combinaison</em>[]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crée une structure de type Historique. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">combinaison</td><td>un tableau de type Combinaison.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>historique </dd></dl>
+
+</div>
+</div>
+<a id="aed38305381294d65a9d7059b54242454"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed38305381294d65a9d7059b54242454">&#9670;&nbsp;</a></span>creer_modele_mastermind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmodele__t.html">ModeleMastermind</a> * creer_modele_mastermind </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structhistorique__t.html">Historique</a> *&#160;</td>
+          <td class="paramname"><em>historique</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structrecords__t.html">Records</a> *&#160;</td>
+          <td class="paramname"><em>rec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structordi__t.html">Ordi</a> *&#160;</td>
+          <td class="paramname"><em>ordi</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crée une structure de type ModeleMastermind. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mm</td><td>une structure de type Historique. </td></tr>
+    <tr><td class="paramname">mm</td><td>une structure de type Records. </td></tr>
+    <tr><td class="paramname">mm</td><td>une structure de type Ordi.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>mm </dd></dl>
+
+</div>
+</div>
+<a id="ab3e2bd464125d389790f71c79e4cfec5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3e2bd464125d389790f71c79e4cfec5">&#9670;&nbsp;</a></span>creer_ordi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structordi__t.html">Ordi</a> * creer_ordi </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crée une structure de type Ordi. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>ordi </dd></dl>
+
+</div>
+</div>
+<a id="a7089ea7b0c979c2cf97e645ae73dfe6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7089ea7b0c979c2cf97e645ae73dfe6b">&#9670;&nbsp;</a></span>creer_records()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structrecords__t.html">Records</a> * creer_records </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crée une structure de type Records. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>rec </dd></dl>
+
+</div>
+</div>
+<a id="a264a6d21aa96acd78a35b0f7c20a81ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a264a6d21aa96acd78a35b0f7c20a81ae">&#9670;&nbsp;</a></span>decale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void decale </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcombinaison__t.html">Combinaison</a> *&#160;</td>
+          <td class="paramname"><em>manche</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Décale les scores. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">manche</td><td>une structure de type Combinaison. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad666783294d96851d95dc19183e8ccb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad666783294d96851d95dc19183e8ccb9">&#9670;&nbsp;</a></span>manche_maj()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void manche_maj </td>
+          <td>(</td>
+          <td class="paramtype">GtkWidget *&#160;</td>
+          <td class="paramname"><em>pLabel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>manche</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mise à jour de la manche. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pLabel</td><td>un label de type GtkWidget. </td></tr>
+    <tr><td class="paramname">manche</td><td>la manche courante. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa8d0e8171c25e4b6fea97d4c7d806732"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8d0e8171c25e4b6fea97d4c7d806732">&#9670;&nbsp;</a></span>remplissage_reponse_aleatoire()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void remplissage_reponse_aleatoire </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmodele__t.html">ModeleMastermind</a> *&#160;</td>
+          <td class="paramname"><em>mm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Génère aléatoirement une combinaison de NB_PIONS couleurs. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mm</td><td>une structure de type ModeleMastermind. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aaa2c79c8cab70aadaa6bc6fa1b9684ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa2c79c8cab70aadaa6bc6fa1b9684ba">&#9670;&nbsp;</a></span>tri_records()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tri_records </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structrecords__t.html">Records</a> *&#160;</td>
+          <td class="paramname"><em>rec</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Trie les records par ordre décroissant. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rec</td><td>une structure de type Records. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

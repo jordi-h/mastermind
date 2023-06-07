@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mastermind:  Fichier source de source/vue_mastermind.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Mastermind
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">vue_mastermind.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="vue__mastermind_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef __VUE_MASTERMIND__</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define __VUE_MASTERMIND__</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;gtk/gtk.h&gt;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="modele__mastermind_8h.html">modele_mastermind.h</a>&quot;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="controleur__mastermind_8h.html">controleur_mastermind.h</a>&quot;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="structvue__t.html">   22</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structvue__t.html">vue_t</a>{</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="structmodele__t.html">ModeleMastermind</a> *mm;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    GtkWidget *pLabelManche;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    GtkWidget *pLabelMode;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">char</span> imageP[50];</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">char</span> imageS[50];</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}<a class="code" href="structvue__t.html">VueMastermind</a>;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">struct </span><a class="code" href="structvue__t.html">vue_t</a> *<a class="code" href="vue__mastermind_8h.html#ae6b1b61d53b05d46cfd3022852520530">creer_vue_mastermind</a>(<a class="code" href="structmodele__t.html">ModeleMastermind</a> *mm);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;GtkWidget *<a class="code" href="vue__mastermind_8h.html#ae0a8432bbf756f898eee57023ce9753d">creer_fenetre</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keywordtype">void</span> <a class="code" href="vue__mastermind_8h.html#ab8cceca78165fdf756e4c8edd79425ce">fenetre_records</a>(GtkWidget *pF, gpointer data);</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keywordtype">void</span> <a class="code" href="vue__mastermind_8h.html#aef4fa043b8abcc30132c660501a49171">apropos</a>(GtkWidget *pF, gpointer data);</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keywordtype">void</span> <a class="code" href="vue__mastermind_8h.html#aac8415c28bea999249a0ef06ddb0fcc3">regles</a>(GtkWidget *pF, gpointer data);</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif //__VUE_MASTERMIND__</span></div><div class="ttc" id="vue__mastermind_8h_html_aac8415c28bea999249a0ef06ddb0fcc3"><div class="ttname"><a href="vue__mastermind_8h.html#aac8415c28bea999249a0ef06ddb0fcc3">regles</a></div><div class="ttdeci">void regles(GtkWidget *pF, gpointer data)</div><div class="ttdoc">Crée la fenêtre des règles du jeu. </div></div>
+<div class="ttc" id="vue__mastermind_8h_html_aef4fa043b8abcc30132c660501a49171"><div class="ttname"><a href="vue__mastermind_8h.html#aef4fa043b8abcc30132c660501a49171">apropos</a></div><div class="ttdeci">void apropos(GtkWidget *pF, gpointer data)</div><div class="ttdoc">Crée la fenêtre apropos. </div></div>
+<div class="ttc" id="vue__mastermind_8h_html_ab8cceca78165fdf756e4c8edd79425ce"><div class="ttname"><a href="vue__mastermind_8h.html#ab8cceca78165fdf756e4c8edd79425ce">fenetre_records</a></div><div class="ttdeci">void fenetre_records(GtkWidget *pF, gpointer data)</div><div class="ttdoc">Crée la fenêtre des records. </div></div>
+<div class="ttc" id="structmodele__t_html"><div class="ttname"><a href="structmodele__t.html">modele_t</a></div><div class="ttdoc">Implémentation du modèle pour le jeu Mastermind. </div><div class="ttdef"><b>Definition:</b> modele_mastermind.h:101</div></div>
+<div class="ttc" id="vue__mastermind_8h_html_ae6b1b61d53b05d46cfd3022852520530"><div class="ttname"><a href="vue__mastermind_8h.html#ae6b1b61d53b05d46cfd3022852520530">creer_vue_mastermind</a></div><div class="ttdeci">struct vue_t * creer_vue_mastermind(ModeleMastermind *mm)</div><div class="ttdoc">Crée une structure de type VueMastermind. </div></div>
+<div class="ttc" id="vue__mastermind_8h_html_ae0a8432bbf756f898eee57023ce9753d"><div class="ttname"><a href="vue__mastermind_8h.html#ae0a8432bbf756f898eee57023ce9753d">creer_fenetre</a></div><div class="ttdeci">GtkWidget * creer_fenetre(void)</div><div class="ttdoc">Crée la fenêtre du jeu Mastermind. </div></div>
+<div class="ttc" id="modele__mastermind_8h_html"><div class="ttname"><a href="modele__mastermind_8h.html">modele_mastermind.h</a></div><div class="ttdoc">Modèle (pattern MVC) pour la gestion du jeu Mastermind. </div></div>
+<div class="ttc" id="controleur__mastermind_8h_html"><div class="ttname"><a href="controleur__mastermind_8h.html">controleur_mastermind.h</a></div><div class="ttdoc">Contrôleur (pattern MVC) pour la gestion du jeu Mastermind. </div></div>
+<div class="ttc" id="structvue__t_html"><div class="ttname"><a href="structvue__t.html">vue_t</a></div><div class="ttdoc">Implémentation de la vue pour le jeu Mastermind. </div><div class="ttdef"><b>Definition:</b> vue_mastermind.h:22</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

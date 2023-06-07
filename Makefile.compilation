@@ -1,0 +1,16 @@
+## Variables
+
+# Tools & flags
+CC=gcc
+CFLAGS=-g --std=c99 --pedantic -Wall -W -Wmissing-prototypes
+LD=gcc
+LDFLAGS=
+GTKFLAGS=`pkg-config --cflags --libs gtk+-2.0`
+DOXYGEN=doxygen
+
+# Files
+EXEC=mastermind
+MODULES=main_mastermind.c controleur_mastermind.c modele_mastermind.c vue_mastermind.c
+OBJECTS=main_mastermind.o controleur_mastermind.o modele_mastermind.o vue_mastermind.o
+
+DOXFILE=DoxyFile

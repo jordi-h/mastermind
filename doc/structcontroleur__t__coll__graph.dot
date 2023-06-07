@@ -1,0 +1,19 @@
+digraph "controleur_t"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="controleur_t",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" vm" ,fontname="Helvetica"];
+  Node2 [label="vue_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structvue__t.html",tooltip="Implémentation de la vue pour le jeu Mastermind. "];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mm" ,fontname="Helvetica"];
+  Node3 [label="modele_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmodele__t.html",tooltip="Implémentation du modèle pour le jeu Mastermind. "];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" rec" ,fontname="Helvetica"];
+  Node4 [label="records_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structrecords__t.html",tooltip="Structure contenant les outils suplémentaires nécessaires pour les records. "];
+  Node5 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ordi" ,fontname="Helvetica"];
+  Node5 [label="ordi_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structordi__t.html",tooltip="Structure contenant les outils suplémentaires nécessaires pour l&#39;algorithme de l&#39;ordinateur. "];
+  Node6 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" historique" ,fontname="Helvetica"];
+  Node6 [label="historique_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structhistorique__t.html",tooltip="Structure contenant l&#39;historique de toutes les combinaisons. "];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" manche" ,fontname="Helvetica"];
+  Node7 [label="combinaison_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structcombinaison__t.html",tooltip="Représentation d&#39;une combinaison de couleurs et de son score. "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mm" ,fontname="Helvetica"];
+}
